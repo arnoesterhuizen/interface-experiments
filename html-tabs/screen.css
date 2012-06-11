@@ -1,0 +1,33 @@
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+a {
+	display: block;
+	float: right;
+	width: 90px;
+	margin-left: -15px;
+	line-height: 25px;
+	text-align: left;
+	padding-left: 25px;
+	text-decoration: none;
+	font-weight: bold;
+	color: #ccc;
+	background: url(tabs.png) 0 0 no-repeat;
+}
+a:hover {
+	background-position: 0 -25px;
+}
+a:active {
+	background-position: 0 -50px;
+}
+li.last a {
+	background-position: -120px 0;
+}
+li.last a:hover {
+	background-position: -120px -25px;
+}
+li.last a:active {
+	background-position: -120px -50px;
+}
