@@ -1,0 +1,59 @@
+@import url('base.css');
+
+div#container {
+	margin: 2em;
+}
+
+body { counter-reset: sectionL1; }
+
+h1, h2, h3, h4 {
+	font: 3em/1 "segoe ui light", sans-serif;
+	margin: 0.5em 0 0;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+	padding-left: 4em;
+	opacity: 0.4;
+	text-transform: capitalize;
+}
+
+h1 {
+  counter-increment: sectionL1;
+  counter-reset: sectionL2;
+}
+h2 {
+  counter-increment: sectionL2;
+  counter-reset: sectionL3;
+  text-transform: uppercase;
+}
+h3 {
+  counter-increment: sectionL3;
+  counter-reset: sectionL4;
+}
+h4 {
+  counter-increment: sectionL4;
+}
+
+p, ul {
+	margin: 0 12em 1em;
+	line-height: 1.6;
+	padding-left: 0em;
+}
+ul {
+	list-style-position: outside;
+}
+
+h1:before, h2:before, h3:before, h4:before {
+	opacity: 0.4;
+	font-size: 0.6em;
+	display: block;
+	width: 6em;
+	text-align: right;
+	position: absolute;
+	left: 1.2em;
+	padding-top: 0.6em;
+	/*
+	outline: 1px solid red;
+	//*/
+}
+
+h2:before {content: counter(sectionL2, upper-roman)}
+h3:before {content: counter(sectionL3, upper-latin)}
