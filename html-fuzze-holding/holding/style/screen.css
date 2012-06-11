@@ -1,0 +1,44 @@
+/* reset.css */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:tahoma,arial,sans-serif;vertical-align:baseline;}
+body {line-height:1.5;}
+table {border-collapse:separate;border-spacing:0;}
+caption, th, td {text-align:left;font-weight:normal;}
+table, td, th {vertical-align:middle;}
+blockquote:before, blockquote:after, q:before, q:after {content:"";}
+blockquote, q {quotes:"" "";}
+a img {border:none;}
+
+body {
+	background: #001816 url(../img/tile.gif) 0 0 repeat;
+	color: #fff;
+	text-align: center;
+}
+abbr {
+	border-bottom: 1px dotted #666;
+}
+a {
+	color: #eee;
+}
+
+
+#branding h1 {
+	width: 551px;
+	text-align: center;
+	margin: 200px auto 0;
+}
+#branding h1 a {
+	display: block;
+	text-align: left;
+	text-indent: -1000em;
+	overflow: hidden;
+	height: 136px;
+	background: url(../img/logo.gif) 0% 50% no-repeat;
+}
+
+#footer {
+	padding-top: 100px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+}
