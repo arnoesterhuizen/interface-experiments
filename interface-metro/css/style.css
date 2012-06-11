@@ -1,0 +1,139 @@
+/*@import url('base.css');*/
+
+:root { font-size: 62.5%; }
+
+body {
+	font: 1.1rem/1.5rem "segoe ui semilight", sans-serif;
+	color: rgba(0, 0, 0, 1);
+}
+
+.page_header {
+	font: 4.2rem/4.8rem "segoe ui light", sans-serif;
+}
+.page_subheader {
+	font: 2rem/2.4rem "segoe ui light", sans-serif;
+}
+.content_header {
+	font: 1.1rem/1.5rem "segoe ui semibold", sans-serif;
+}
+nav {
+	font: 1.1rem/1.5rem "segoe ui", sans-serif;
+}
+
+.secondary {
+	color: rgba(0, 0, 0, 0.6);
+}
+
+a {
+	color: rgba(0, 130, 135, 1.0);
+}
+a:hover {
+	color: rgba(50, 154, 163, 1.0);
+}
+a:active {
+	color: rgba(37, 187, 196, 1.0);
+}
+
+
+body > header {
+	height: 10rem;
+	/*outline:  1px solid red;*/
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-left: 12rem;
+}
+
+#container {
+	position: fixed;
+	top: 14rem;
+	left: 0;
+	right: 0;
+	bottom: 5rem;
+	padding-left: 12rem;
+	/*outline: 1px solid green;*/
+}
+
+body > header > h1 {
+	margin: 0;
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.4);*/
+	position: absolute;
+	bottom: -0.3rem;
+}
+body > header > a.back_button {
+	margin: 0;
+	/*border-bottom: 1px solid rgba(0, 0, 0, 0.4);*/
+	position: absolute;
+	bottom: -0.3rem;
+	left: 6rem;
+	width: 4.2rem;
+	height:  4.2rem;
+	overflow: hidden;
+	text-indent: 100%;
+	background: url(../img/back.png) 50% 50% no-repeat;
+}
+body > header > a.back_button:hover {
+	opacity: 0.2;
+}
+
+h2 {
+	color: #1a1a1a;
+	margin: 0;
+}
+
+section {
+	margin-right: 8rem;
+	overflow: auto;
+	float: left;
+	/* outline: 1px solid rgba(255, 0, 0, 0.1); */
+
+}
+
+section.col-2 {
+	width: 32rem;
+}
+section.col-3 {
+	width: 48rem;
+}
+
+section header {
+	font-size: 3rem;
+}
+section div {
+	float: left;
+	width: 13rem;
+	height: 13rem;
+	margin: 0 1rem 1rem 0;
+	background: #eee;
+	padding: 1rem;
+}
+
+section div.col-2 {
+	width: 29rem;
+}
+section div.row-2 {
+	height: 29rem;
+}
+
+section div header {
+	font-size: 2rem;
+	text-transform: uppercase;
+}
+
+.summary {
+	position: relative;
+	font-size: 8rem;
+	line-height: 9rem;
+}
+
+.summary header {
+	line-height: 1.4;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: block;
+	font-size: 1.4rem;
+	padding: 1rem;
+}
