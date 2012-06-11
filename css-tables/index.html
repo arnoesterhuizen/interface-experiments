@@ -1,0 +1,313 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>Table Styling Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="Arno Esterhuizen">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/libs/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+<div id="container">
+	<header>
+		<h1>Table Styling Example</h1>
+	</header>
+
+	<div id="main" role="main">
+		<h2>Normal Table</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Normal Table</h2>
+		<table class="note">
+			<thead>
+				<tr>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<h2>Normal Table</h2>
+		<table class="comment">
+			<thead>
+				<tr>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+					<th>Lorem</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+				<tr>
+					<td>ipsum</td>
+					<td>dolor</td>
+					<td>sit</td>
+					<td>amet</td>
+					<td>nonumy</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+		<h2>Table with Group Headers and Columns</h2>
+		<table>
+			<col span="4" class="narrow" />
+			<col class="action" />
+			<thead>
+				<tr>
+					<th id="hdr_lorem">Lorem</th>
+					<th id="hdr_ipsum">Ipsum</th>
+					<th id="hdr_dolor">Dolor</th>
+					<th id="hdr_sit">Sit</th>
+					<th id="hdr_amet">Amet</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th colspan="5" id="hdr_column_group_header_1">Column Group Header 1</th>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_1">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_1">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_1">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_1">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_1">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_1">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_1">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_1">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_1">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_1">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_1">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_1">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_1">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_1">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_1">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_1">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_1">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_1">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_1">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_1">nonumy</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<th colspan="5" id="hdr_column_group_header_2">Column Group Header 2</th>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_2">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_2">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_2">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_2">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_2">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_2">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_2">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_2">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_2">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_2">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_2">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_2">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_2">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_2">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_2">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_2">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_2">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_2">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_2">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_2">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_2">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_2">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_2">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_2">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_2">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_2">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_2">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_2">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_2">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_2">nonumy</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr>
+					<th colspan="5" id="hdr_column_group_header_3">Column Group Header 3</th>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_3">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_3">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_3">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_3">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_3">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_3">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_3">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_3">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_3">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_3">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_3">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_3">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_3">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_3">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_3">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_3">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_3">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_3">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_3">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_3">nonumy</td>
+				</tr>
+				<tr>
+					<td headers="hdr_lorem hdr_column_group_header_3">ipsum</td>
+					<td headers="hdr_ipsum hdr_column_group_header_3">dolor</td>
+					<td headers="hdr_dolor hdr_column_group_header_3">sit</td>
+					<td headers="hdr_sit hdr_column_group_header_3">amet</td>
+					<td headers="hdr_amet hdr_column_group_header_3">nonumy</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer>
+
+	</footer>
+</div> <!--! end of #container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.js"><\/script>')</script>
+
+<!-- scripts concatenated and minified via ant build script-->
+<script src="js/plugins.js"></script>
+<script src="js/script.js"></script>
+<!-- end scripts-->
+
+<script>
+	var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']]; // Change UA-XXXXX-X to be your site's ID
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>

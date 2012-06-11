@@ -1,0 +1,45 @@
+@import url('base.css');
+
+div#container {
+	width: 80%;
+	margin: 2em auto;
+}
+
+table {
+	width: 100%;
+	margin: 2em auto;
+	background: #eee;
+	border: 1px solid #ccc;
+	line-height: 2.5em;
+}
+
+table.note {
+	background-color: #ffa;
+}
+table.comment {
+	background-color: #def;
+}
+
+col.action, thead, th, tr:nth-child(2n) {
+	background: #ddd;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+tbody, th, td {
+	text-align: left;
+	padding: 0 0.75em;
+	border: 1px solid #ccc;
+	border-color: rgba(0, 0, 0, 0.2);
+}
+tbody, tbody th {
+	border-width: 2px 0;
+}
+
+tbody tr:hover, th:hover {
+	background: #bbb;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+col.narrow {
+	width: 12.5%;
+}
