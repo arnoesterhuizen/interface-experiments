@@ -1,0 +1,36 @@
+html {
+	font: 100%/1 tahoma, helvetica, arial,  sans-serif;
+}
+body {
+	font-size: 80%;
+	line-height: 1.5;
+	margin: 50px 10%;
+}
+ul {
+	list-style-type: none;
+	margin: 0 18px 0 0;
+	padding: 0;
+	background: #eee;
+	width: 25em;
+}
+
+ul.visibility li img {
+	visibility: hidden;
+	vertical-align: text-bottom;
+}
+ul.visibility li:hover img {
+	visibility: visible;
+}
+
+ul.position li {
+	position: relative;
+}
+ul.position li img {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	right: 2px;
+}
+ul.position li:hover img {
+	display: inline;
+}
