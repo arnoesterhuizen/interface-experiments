@@ -3,7 +3,7 @@
 // Page créé par Shepard [Fabian Pijcke] <Shepard8@laposte.net>
 // Arno Esterhuizen <arno.esterhuizen@gmail.com>
 // et Romain Bourdon <romain@anaska.com>
-//  
+//
 // icônes par Mark James <http://www.famfamfam.com/lab/icons/silk/>
 
 
@@ -14,7 +14,7 @@ $aliasDir = '../alias/';
 
 
 // repertoires à ignorer dans les projets
-$projectsListIgnore = array ('.','..');
+$projectsListIgnore = array ('.','..', '.git');
 
 
 // textes
@@ -68,12 +68,12 @@ if (isset($_GET['img']))
         header("Content-type: image/png");
         echo base64_decode($pngFolder);
         exit();
-        
+
         case 'gifLogo' :
         header("Content-type: image/gif");
         echo base64_decode($gifLogo);
         exit();
-        
+
         case 'favicon' :
         header("Content-type: image/x-icon");
         echo base64_decode($favicon);
@@ -83,7 +83,7 @@ if (isset($_GET['img']))
 
 
 
-// Définition de la langue et des textes 
+// Définition de la langue et des textes
 $langue = 'en';
 
 //initialisation
@@ -92,10 +92,10 @@ $aliasContents = '';
 // recuperation des projets
 $handle=opendir(".");
 $projectContents = '';
-while ($file = readdir($handle)) 
+while ($file = readdir($handle))
 {
-	if (is_dir($file) && !in_array($file,$projectsListIgnore)) 
-	{		
+	if (is_dir($file) && !in_array($file,$projectsListIgnore))
+	{
 		$projectContents .= '<li><a href="'.$file.'">'.$file.'</a></li>';
 	}
 }
@@ -202,7 +202,7 @@ a:hover {
 	font-size: 0.85em;
 }
 </style>
-    
+
 	<link rel="shortcut icon" href="index.php?img=favicon" type="image/ico" />
 </head>
 
@@ -215,7 +215,7 @@ a:hover {
 	$projectContents
 	</ul>
 	<ul id="foot">
-		<li><a href="http://www.wampserver.com">WampServer</a></li> - 
+		<li><a href="http://www.wampserver.com">WampServer</a></li> -
         <li><a href="http://www.wampserver.com/en/donations.php">Donate</a></li> -
 		<li><a href="http://www.anaska.com">Anaska</a></li>
 	</ul>
