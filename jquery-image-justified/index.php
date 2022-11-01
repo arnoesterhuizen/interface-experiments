@@ -23,8 +23,6 @@
 
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" media="screen" href="css/screen.css">
-
-	<script src="js/libs/modernizr-2.6.2.js"></script>
 </head>
 <body>
 
@@ -39,8 +37,6 @@
 	</div>
 </div> <!--! end of #container -->
 
-<script src="js/libs/jquery-1.9.1.js"></script>
-<!-- scripts concatenated and minified via ant build script-->
 <script src="js/script.js"></script>
 <!-- end scripts-->
 </body>
